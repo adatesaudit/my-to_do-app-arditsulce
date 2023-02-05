@@ -70,7 +70,7 @@ window.close()
 #     match event:
 #         case "Add":
 #             todos = functions.get_todos()
-#             new_todo = values['todo'] + "\n"
+#             new_todo = values['falsetodo'] + "\n"
 #             todos.append(new_todo)
 #             functions.write_todos(todos)
 #             window['todos'].update(values=todos)
@@ -78,7 +78,7 @@ window.close()
 #         case "Edit":
 #             try:
 #                 todo_to_edit = values['todos'][0]
-#                 new_todo = values['todo']
+#                 new_todo = values['falsetodo']
 #
 #                 todos = functions.get_todos()
 #                 index = todos.index(todo_to_edit)
@@ -94,13 +94,13 @@ window.close()
 #             todos.remove(todo_to_complete)
 #             functions.write_todos(todos)
 #             window['todos'].update(values=todos)
-#             window['todo'].update(value='')
+#             window['falsetodo'].update(value='')
 #
 #         case "Exit":
 #             break
 #
 #         case "todos":
-#             window['todo'].update(value=values['todos'][0])
+#             window['falsetodo'].update(value=values['todos'][0])
 #
 #         case sg.WIN_CLOSED:
 #             break
