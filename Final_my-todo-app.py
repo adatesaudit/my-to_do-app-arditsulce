@@ -7,6 +7,7 @@ sg.theme("DarkTeal9")
 clock = sg.Text('', key='clock')
 label = sg.Text("Type in a to-do")
 input_box = sg.InputText(tooltip="Enter todo", key="todo")
+# todo képre cserélni a nyomógombot
 add_button = sg.Button("Add", size=10)
 list_box = sg.Listbox(values=functions.get_todos(), key='todos',
                       enable_events=True, size=[45, 10])
